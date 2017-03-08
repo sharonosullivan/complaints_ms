@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Log a complaint</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="../static/css/style.css"
+          th:href="@{css/style.css}" rel="stylesheet" media="screen"/>
+
+</head>
+<body>
+<h1>Form</h1>
+<table id="complaintform">
+
+    <tr  th:class="even"><td>
+
+<form action="#" th:action="@{/complaintform}" th:object="${complaintform}" method="post">
+    <p>ID: <input type="text" th:field="*{complaintid}" /></p>
+    <p>Category: <input type="text" th:field="*{complaintcategory}" /></p>
+    <p>Complaint: <input type="text" th:field="*{complainttext}" /></p>
+    <p>Customer ID: <input type="text" th:field="*{customerid}" /></p>
+    <p>Employee ID: <input type="text" th:field="*{employeeid}" /></p>
+    <p>Status: <input type="text" th:field="*{complaintstatus}" /></p>
+    <p><input class="submitbutton" type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</td></tr>  </table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+
+
+.submitbutton  /*styling of green submit buttons for login, sign up and contact us forms*/
+{background-color: #7D25F8;
+    cursor:pointer;
+    border:1px solid #7D25F8;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    border-radius:5px;
+    width:100%;}
+
+.submitbutton:hover   /*styling on hover of green submit buttons for login, sign up and contact us forms*/
+{background-color:#6100EA !important}/*turns darker green on hover*/
+
+
+
+#complaintform{text-align: left;    /*styling for login, sign up and contact us forms*/
+    border:1px solid #b6c8c8;
+    border-radius: 7px;
+    background-color: white;
+    width:360px;
+    padding:20px;
+    font-family:  Arial, Helvetica, sans-serif;}
+
