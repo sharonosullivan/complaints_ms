@@ -7,23 +7,37 @@
     <link href="../static/css/style.css"
           th:href="@{css/style.css}" rel="stylesheet" media="screen"/>
 
+    <style>
+
+        input  {
+        width:100%;
+        border:1px solid #b6c8c8;
+        border-radius:5px;
+        height:20px; /*Styling for the input text boxes*/
+    }
+
+        textarea  {
+            width:100%;
+            border:1px solid #b6c8c8;
+            border-radius:5px;
+            height:40px; /*Styling for the input text boxes*/
+        }
+    </style>
+
 </head>
 <body>
-<h1>Form</h1>
-<table id="complaintform">
+<h2>Log your Complaint</h2>
 
-    <tr  th:class="even"><td>
 
-<form action="#" th:action="@{/complaintform}" th:object="${complaintform}" method="post">
-    <p>ID: <input type="text" th:field="*{complaintid}" /></p>
+<form action="#" id="complaintform" th:action="@{/complaintform}" th:object="${complaintform}" method="post">
+    <p>ID: <input  type="text" th:field="*{complaintid}" /></p>
     <p>Category: <input type="text" th:field="*{complaintcategory}" /></p>
-    <p>Complaint: <input type="text" th:field="*{complainttext}" /></p>
-    <p>Customer ID: <input type="text" th:field="*{customerid}" /></p>
-    <p>Employee ID: <input type="text" th:field="*{employeeid}" /></p>
-    <p>Status: <input type="text" th:field="*{complaintstatus}" /></p>
-    <p><input class="submitbutton" type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    <p>Complaint: <textarea type="text" th:field="*{complainttext}"></textarea> </p>
+    <p>Customer ID: <input  type="text" th:field="*{customerid}" /></p>
+    <p>Employee ID: <input  type="text" th:field="*{employeeid}" /></p>
+    <p>Status: <input  type="text" th:field="*{complaintstatus}" /></p>
+    <p ><input class="submitbutton" type="submit" value="Submit" /> </p>
 </form>
-</td></tr>  </table>
 
 </body>
 </html>
