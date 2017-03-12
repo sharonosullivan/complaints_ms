@@ -30,11 +30,11 @@
 
 
 <form action="#" id="complaintform" th:action="@{/complaintform}" th:object="${complaintform}" method="post">
-    <p>ID: <input  type="text" th:field="*{complaintid}" /></p>
-    <p>Category: <input type="text" th:field="*{complaintcategory}" /></p>
+
+  <!-- <p>Category: <input type="text" th:field="*{complaintcategory}" /></p>
     <p>Complaint: <textarea type="text" th:field="*{complainttext}"></textarea> </p>
     <p>Customer ID: <input  type="text" th:field="*{customerid}" /></p>
-    <p>Employee ID: <input  type="text" th:field="*{employeeid}" /></p>
+    <p>Employee ID: <input  type="text" th:field="*{employeeid}" /></p>-->
     <p>Status: <input  type="text" th:field="*{complaintstatus}" /></p>
     <p ><input class="submitbutton" type="submit" value="Submit" /> </p>
 </form>

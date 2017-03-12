@@ -4,20 +4,16 @@ import com.complaintsms.controller.LogComplaintController;
 
 public class Complaint  {
 
-        private long complaintid;
+
         private String complaintcategory;
         private String complainttext;
         private long customerid;
         private long employeeid;
         private String complaintstatus;
 
-    public long getComplaintid() {
-        return complaintid;
-    }
 
-    public void setComplaintid(long complaintid) {
-        this.complaintid = complaintid;
-    }
+
+
 
     public String getComplaintcategory() {
         return complaintcategory;
